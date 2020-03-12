@@ -21,4 +21,4 @@
   - train
   - val
   - xml_to_csv.py
-  - generate_tfrecord.py# dataset
+  - generate_tfrecord.py
