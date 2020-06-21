@@ -6,7 +6,7 @@ train_percent = 0.4
 xmlfilepath = 'Annotations'
 txtsavepath = 'ImageSets\Main'
 total_xml = os.listdir(xmlfilepath)
-print(total_xml)
+
 num=len(total_xml)
 list=range(num)
 tv=int(num*trainval_percent)
@@ -20,7 +20,7 @@ ftrain = open('ImageSets/Main/train.txt', 'w')
 fval = open('ImageSets/Main/val.txt', 'w')
  
 for i  in list:
-    name=total_xml[i]+'\n'#[:-4]
+    name=total_xml[i][:-4+'\n'
     if i in trainval:
         ftrainval.write(name)
         if i in train:
