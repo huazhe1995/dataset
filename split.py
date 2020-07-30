@@ -20,7 +20,7 @@ ftrain = open('ImageSets/Main/train.txt', 'w')
 fval = open('ImageSets/Main/val.txt', 'w')
  
 for i  in list:
-    name=total_xml[i][:-4+'\n'
+    name=total_xml[i][:-4]+'\n'
     if i in trainval:
         ftrainval.write(name)
         if i in train:
